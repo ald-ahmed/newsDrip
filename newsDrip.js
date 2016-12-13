@@ -36,6 +36,7 @@ $('iframe').remove();
 $('header').remove();
 $('aside').remove();
 $('blockquote').remove();
+$('span').remove();
 
 $('*').each(function() {
 
