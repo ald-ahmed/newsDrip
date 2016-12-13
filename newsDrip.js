@@ -38,7 +38,7 @@ $('*').each(function() {
     if (text===null){
       return;
     }
-
+    console.log(text);
     if (text.length>max && text.contains(".")) {
 
     max = $(this).justtext().length;
