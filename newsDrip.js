@@ -78,6 +78,8 @@ $('*').each(function() {
     }
     else {
       elementClass=$(this).attr('class');
+      elementClass= "."+elementClass;
+      elementClass=elementClass.replace(/\s{2}/g," ").trim().replace(/\s/g,".");
       console.log("has class name, and it is " + elementClass);
     }
 
