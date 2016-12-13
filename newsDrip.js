@@ -16,6 +16,7 @@ jQuery.fn.justtext = function() {
 };
 
 
+var title = $(document).prop('title');
 
 var max=0;
 var elementClass;
@@ -37,6 +38,8 @@ $('header').remove();
 $('aside').remove();
 $('blockquote').remove();
 $('span').remove();
+$('title').remove();
+
 
 $('*').each(function() {
 
@@ -96,7 +99,7 @@ $('body').append("<div class='drip'></div>");
 
 $('.drip').append("<style>.drip{margin: 0 auto;position: relative;width: 40%;}<style>");
 
-$('.drip').append("<h1 class='title'>"+ $(document).prop('title')+"</h1>");
+$('.drip').append("<h1 class='title'>"+ title+"</h1>");
 
 $(elementClass).each(function() {
   if ($(this).text().length===0){
