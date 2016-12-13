@@ -62,7 +62,7 @@ $('*').each(function() {
       while (elementWithoutClass.attr('class') == null){
         completePath = elementWithoutClass.prop("tagName") +" "+ completePath;
         elementWithoutClass= elementWithoutClass.parent();
-        console.log("the parents is  " + elementWithoutClass);
+        console.log("the path to it is  " + completePath);
       }
 
       elementClass=elementWithoutClass.attr('class');
