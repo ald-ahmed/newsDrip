@@ -1,3 +1,8 @@
+if (!String.prototype.contains) {
+    String.prototype.contains = function(s) {
+        return this.indexOf(s) > -1;
+    };
+}
 
 
 jQuery.fn.justtext = function() {
@@ -9,6 +14,7 @@ jQuery.fn.justtext = function() {
             .text();
 
 };
+
 
 
 var max=0;
