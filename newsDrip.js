@@ -73,7 +73,7 @@ $('*').each(function() {
       completePath = elementClass  +" "+ completePath;
       console.log("complete path  " + completePath);
       console.log("class is finally " + elementClass);
-
+      elementClass = completePath;
     }
     else {
       elementClass=$(this).attr('class');
