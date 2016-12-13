@@ -57,7 +57,7 @@ $('*').each(function() {
 
       var elementWithoutClass = $(this);
 
-      while (elementWithoutClass.attr('class') === null){
+      while (elementWithoutClass.attr('class') == null){
         elementWithoutClass= elementWithoutClass.parent();
         console.log("the parents is  " + elementWithoutClass);
       }
