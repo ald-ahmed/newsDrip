@@ -53,20 +53,22 @@ $('*').each(function() {
 
     if ($(this).attr('class')===null) {
 
+      console.log("does not have class name  ");
+
       var elementWithoutClass = $(this);
 
       while (elementWithoutClass.attr('class') === null){
         elementWithoutClass= elementWithoutClass.parent();
+        console.log("the parents is  " + elementWithoutClass);
       }
 
       elementClass=elementWithoutClass.attr('class');
-      console.log("null - " + elementClass);
+      console.log("class is finally " + elementClass);
 
     }
     else {
       elementClass=$(this).attr('class');
-      console.log("not null");
-
+      console.log("has class name, and it is " + elementClass);
     }
 
   }
