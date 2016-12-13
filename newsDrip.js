@@ -68,7 +68,7 @@ $('*').each(function() {
       elementClass=elementWithoutClass.attr('class');
 
       completePath = elementClass  +" "+ completePath;
-      console.log("complete path  " + elementClass);
+      console.log("complete path  " + completePath);
 
       console.log("class is finally " + elementClass);
 
