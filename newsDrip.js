@@ -35,6 +35,7 @@ $('input').remove();
 $('iframe').remove();
 $('header').remove();
 $('aside').remove();
+$('blockquote').remove();
 
 $('*').each(function() {
 
@@ -60,7 +61,7 @@ $('*').each(function() {
       var completePath="";
 
       while (elementWithoutClass.attr('class') == null){
-        completePath = elementWithoutClass.prop("tagName").toLowerCase() +" "+ completePath;
+        completePath = elementWithoutClass.prop("tagName").toLowerCase() +">"+ completePath;
         elementWithoutClass= elementWithoutClass.parent();
         console.log("the path to it is  " + completePath);
       }
