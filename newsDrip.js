@@ -35,8 +35,11 @@ $('*').each(function() {
 
     var text = $(this).justtext();
 
-    if (text.length>max && text.contains(".")) {
+    if (text===null){
+      return;
+    }
 
+    if (text.length>max && text.contains(".")) {
 
     max = $(this).justtext().length;
 
@@ -59,7 +62,6 @@ $('*').each(function() {
       console.log("not null");
 
     }
-
 
   }
 
