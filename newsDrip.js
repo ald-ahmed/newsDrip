@@ -34,6 +34,7 @@ $('textarea').remove();
 $('input').remove();
 $('iframe').remove();
 $('header').remove();
+$('aside').remove();
 
 $('*').each(function() {
 
@@ -56,13 +57,19 @@ $('*').each(function() {
       console.log("does not have class name  ");
 
       var elementWithoutClass = $(this);
+      var completePath;
 
       while (elementWithoutClass.attr('class') == null){
+        completePath = elementWithoutClass +" "+ completePath;
         elementWithoutClass= elementWithoutClass.parent();
         console.log("the parents is  " + elementWithoutClass);
       }
 
       elementClass=elementWithoutClass.attr('class');
+      
+      completePath = elementClass  +" "+ completePath;
+      console.log("complete path  " + elementClass);
+
       console.log("class is finally " + elementClass);
 
     }
