@@ -33,7 +33,9 @@ $('*').each(function() {
 
     $(this).removeAttr('alt');
 
-    if (($(this).justtext()).length>max && ($(this).justtext()).contains(".")) {
+    var text = $(this).justtext();
+
+    if (text.length>max && text.contains(".")) {
 
 
     max = $(this).justtext().length;
