@@ -60,13 +60,13 @@ $('*').each(function() {
       var completePath;
 
       while (elementWithoutClass.attr('class') == null){
-        completePath = elementWithoutClass +" "+ completePath;
+        completePath = elementWithoutClass.prop("tagName") +" "+ completePath;
         elementWithoutClass= elementWithoutClass.parent();
         console.log("the parents is  " + elementWithoutClass);
       }
 
       elementClass=elementWithoutClass.attr('class');
-      
+
       completePath = elementClass  +" "+ completePath;
       console.log("complete path  " + elementClass);
 
