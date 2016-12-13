@@ -51,7 +51,7 @@ $('*').each(function() {
 
     console.log($(this).justtext());
 
-    if ($(this).attr('class')===null) {
+    if ($(this).attr('class')==null) {
 
       console.log("does not have class name  ");
 
