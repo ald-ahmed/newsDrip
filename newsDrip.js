@@ -35,11 +35,11 @@ $('*').each(function() {
 
     var text = $(this).justtext();
 
-    if (text===null){
+    if (text.length<=max){
       return;
     }
-    console.log(text);
-    if (text.length>max && text.contains(".")) {
+
+    if (text.contains(".")) {
 
     max = $(this).justtext().length;
 
