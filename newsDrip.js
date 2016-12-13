@@ -67,9 +67,11 @@ $('*').each(function() {
 
       elementClass=elementWithoutClass.attr('class');
 
+      elementClass= "."+elementClass;
+      elementClass=elementClass.replace(/\s{2}/g," ").trim().replace(/\s/g,".");
+
       completePath = elementClass  +" "+ completePath;
       console.log("complete path  " + completePath);
-
       console.log("class is finally " + elementClass);
 
     }
@@ -82,13 +84,8 @@ $('*').each(function() {
 
 });
 
-elementClass= "."+elementClass;
-console.log(elementClass);
-
-elementClass=elementClass.replace(/\s{2}/g," ").trim().replace(/\s/g,".");
-
 var content = $(elementClass).text();
-console.log(content);
+console.log("got this content " + content);
 
 
 $('body').append("<div class='drip'></div>");
