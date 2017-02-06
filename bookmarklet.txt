@@ -1,1 +1,15 @@
-javascript:(function(){javascript:(function(){s=document.createElement('script');s.type='text/javascript';s.src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js';document.body.appendChild(s);z=document.createElement('script');z.type='text/javascript';z.src='https://rawgit.com/ald-ahmed/newsDrip/master/newsDrip.js?v='+parseInt(Math.random()*99999999);document.body.appendChild(z);})();})();
+javascript: (function() {
+        s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js';
+        document.body.appendChild(s);
+        z = document.createElement('script');
+        z.type = 'text/javascript';
+        z.src = 'https://rawgit.com/ald-ahmed/newsDrip/master/newsDrip.js?v=' + parseInt(Math.random() * 99999999);
+        document.body.appendChild(z);
+        document.open();
+        p = document.createElement('script');
+        p.type = 'text/javascript';
+        p.src = 'https://rawgit.com/ald-ahmed/newsDrip/master/print.js?v=' + parseInt(Math.random() * 99999999);
+        document.body.appendChild(p);
+})();
