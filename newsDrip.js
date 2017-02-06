@@ -95,8 +95,6 @@ var content = $(elementClass).text();
 
 console.log("got this content " + content);
 
-$( "header" ).remove();
-$( "body" ).remove();
 
 $('body').append("<div class='drip'></div>");
 $('.drip').append("<style>.drip{margin: 0 auto;position: relative;width: 40%;}<style>");
@@ -112,4 +110,4 @@ $(elementClass).each(function() {
 });
 
 
-$('div:not(.drip)').remove();
+$('html:not(.drip)').remove();
