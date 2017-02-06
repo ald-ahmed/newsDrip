@@ -15,7 +15,6 @@ jQuery.fn.justtext = function() {
 
 };
 
-
 var title = $(document).prop('title');
 
 var max=0;
@@ -57,14 +56,14 @@ $('*').each(function() {
 
     console.log($(this).justtext());
 
-    if ($(this).attr('class')==null) {
+    if ($(this).attr('class')===null) {
 
       console.log("does not have class name  ");
 
       var elementWithoutClass = $(this);
       var completePath="";
 
-      while (elementWithoutClass.attr('class') == null){
+      while (elementWithoutClass.attr('class') === null){
         completePath = ">"+ elementWithoutClass.prop("tagName").toLowerCase() + completePath;
         elementWithoutClass= elementWithoutClass.parent();
         console.log("the path to it is  " + completePath);
@@ -92,13 +91,15 @@ $('*').each(function() {
 });
 
 var content = $(elementClass).text();
+
+
 console.log("got this content " + content);
 
+$( "header" ).remove();
+$( "body" ).remove();
 
 $('body').append("<div class='drip'></div>");
-
 $('.drip').append("<style>.drip{margin: 0 auto;position: relative;width: 40%;}<style>");
-
 $('.drip').append("<h1 class='title'>"+ title+"</h1>");
 
 $(elementClass).each(function() {
