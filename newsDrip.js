@@ -91,4 +91,4 @@ $('*').each(function() {
 });
 
 var content = $(elementClass).text();
-$.Storage.set("newsDripData", content);
+localStorage.setItem("newsDripData", content);

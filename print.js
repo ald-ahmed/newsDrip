@@ -1,4 +1,4 @@
-var content = $.Storage.get("newsDripData");
+var content = localStorage.getItem("newsDripData");
 
 console.log("got this content " + content);
 
