@@ -1,4 +1,5 @@
-var content = localStorage.getItem("newsDripData");
+var content = localStorage.getItem("newsDripContent");
+var title =  localStorage.getItem("newsDripTitle");
 
 console.log("got this content " + content);
 
