@@ -1,24 +1,25 @@
 javascript:(function() {
-        s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js';
-        document.body.appendChild(s);
-        z = document.createElement('script');
-        z.type = 'text/javascript';
-        z.src = 'https://rawgit.com/ald-ahmed/newsDrip/master/newsDrip.js?v=' + parseInt(Math.random() * 99999999);
-        document.body.appendChild(z);
-        
-        document.body.innerHTML = '';
-        while(elem.attributes.length > 0)
-        elem.removeAttribute(elem.attributes[0].name);
+      s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js';
+      document.body.appendChild(s);
+      z = document.createElement('script');
+      z.type = 'text/javascript';
+      z.src = 'https://rawgit.com/ald-ahmed/newsDrip/master/newsDrip.js?v=' + parseInt(Math.random() * 99999999);
+      document.body.appendChild(z);
+      
+      while(document.body.attributes.length > 0)
+      document.body.removeAttribute(document.body.attributes[0].name);
 
-        s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js';
-        document.body.appendChild(s);
-  
-        p = document.createElement('script');
-        p.type = 'text/javascript';
-        p.src = 'https://rawgit.com/ald-ahmed/newsDrip/master/print.js?v=' + parseInt(Math.random() * 99999999);
-        document.body.appendChild(p);
+      document.body.innerHTML = '';
+      
+      s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.src = 'http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js';
+      document.body.appendChild(s);
+
+      p = document.createElement('script');
+      p.type = 'text/javascript';
+      p.src = 'https://rawgit.com/ald-ahmed/newsDrip/master/print.js?v=' + parseInt(Math.random() * 99999999);
+      document.body.appendChild(p);
 })();
