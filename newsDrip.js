@@ -91,5 +91,7 @@ $('*').each(function() {
 });
 
 var content = $(elementClass).text();
+var elements = elementClass;
 localStorage.setItem("newsDripContent", content);
+localStorage.setItem("newsDripElements", elements);
 localStorage.setItem("newsDripTitle", title);
